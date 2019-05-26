@@ -9,6 +9,10 @@ Reasons you might find this useful:
 - You want better syntax highlighting support in your text editor
 - You want to extract a function you wrote for PICO-8 and use it in a different Lua program
 
+### You might also try...
+
+While I was working on this project, [picotool](https://github.com/dansanderson/picotool) was updated to support a `--pure-lua` argument to its `listlua` command, which will do roughly the same thing as this!
+
 ## Installation
 
 1. Install [Lua](https://www.lua.org/start.html) for your operating system. This doesn't come with PICO-8, which has its own Lua compiler, so you'll need to install Lua separately.
