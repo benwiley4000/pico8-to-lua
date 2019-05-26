@@ -1,5 +1,5 @@
 package = "pico8-to-lua"
-version = "0.1.0-1"
+version = "0.1.0-2"
 source = {
   url = "git://github.com/benwiley4000/pico8-to-lua.git",
   tag = "v0.1.0"
@@ -11,6 +11,9 @@ description = {
 }
 build = {
   type = "builtin",
+  modules = {
+    ["pico8-to-lua"] = "pico8-to-lua.lua"
+  },
   install = {
     bin = {
       ["pico8-to-lua"] = "pico8-to-lua.lua"
