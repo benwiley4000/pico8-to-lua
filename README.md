@@ -39,7 +39,7 @@ function next_even_number(num)
 end
 ```
 
-You can generate a standard Lua version with the command (depending on your system, you may need to add `lua ` in front of this command):
+You can generate a standard Lua version with the command:
 
 ```console
 $ pico8-to-lua input.lua
