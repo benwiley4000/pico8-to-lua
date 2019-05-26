@@ -1,6 +1,6 @@
 # pico8-to-lua
 
-A command-line utility written in Lua that converts the PICO-8 variety of extended Lua syntax to standard Lua syntax.
+A command-line utility written in Lua that converts the [PICO-8](https://www.lexaloffle.com/pico-8.php) variety of extended Lua syntax to standard Lua syntax.
 
 It's a thin wrapper around the internal syntax convertor from [PICOLOVE](https://github.com/picolove/picolove).
 
