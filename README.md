@@ -13,14 +13,16 @@ Reasons you might find this useful:
 
 1. Install [Lua](https://www.lua.org/start.html) for your operating system. This doesn't come with PICO-8, which has its own Lua compiler, so you'll need to install Lua separately.
 2. You can either:
-  a. Install with [LuaRocks](https://luarocks.org/):
+
+    a. Install with [LuaRocks](https://luarocks.org/):
     ```console
-    luarocks install pico8-to-lua
+    $ luarocks install pico8-to-lua
     ```
-  b. Clone the repository from GitHub and enter the project directory:
+
+    b. Clone the repository from GitHub and enter the project directory:
     ```console
-    git clone https://github.com/benwiley4000/pico8-to-lua.git
-    cd pico-to-lua/
+    $ git clone https://github.com/benwiley4000/pico8-to-lua.git
+    $ cd pico-to-lua/
     ```
 
 ## Usage
@@ -40,7 +42,7 @@ end
 You can generate a standard Lua version with the command (depending on your system, you may need to add `lua ` in front of this command):
 
 ```console
-pico8-to-lua input.lua
+$ pico8-to-lua input.lua
 ```
 
 You should see this output:
@@ -65,7 +67,7 @@ end
 ```
 
 ```console
-pico8-to-lua input.p8
+$ pico8-to-lua input.p8
 ```
 
 ...which will output transformed p8 file contents:
@@ -83,7 +85,7 @@ end
 If you only want the lua output, you can pass the `--lua-only` flag when input a p8 file:
 
 ```console
-pico8-to-lua input.p8 --lua-only
+$ pico8-to-lua input.p8 --lua-only
 ```
 
 ```lua
@@ -96,25 +98,25 @@ end
 If you're in a UNIX environment, you can pipe the output directly to a file:
 
 ```console
-pico8-to-lua input.lua > output.lua
+$ pico8-to-lua input.lua > output.lua
 ```
 
 ```
-pico8-to-lua input.p8 > output.p8
+$ pico8-to-lua input.p8 > output.p8
 ```
 
 Or you can pipe into another program:
 
 ```console
-pico8-to-lua input.p8 --lua-only | luacheck -
+$ pico8-to-lua input.p8 --lua-only | luacheck -
 ```
 
 You can even pipe output from another program into this one by passing `-` as the filename argument:
 
 ```console
-cat input.lua | pico8-to-lua - > output.lua
+$ cat input.lua | pico8-to-lua - > output.lua
 ```
 
 ```console
-curl https://someurl.com/mycart.p8 | pico8-to-lua - --lua-only | luacheck -
+$ curl https://someurl.com/mycart.p8 | pico8-to-lua - --lua-only | luacheck -
 ```
