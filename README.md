@@ -82,7 +82,7 @@ function _init()
 end
 ```
 
-If you only want the lua output, you can pass the `--lua-only` flag when input a p8 file:
+If you only want the lua output, you can pass the `--lua-only` flag when the input is a p8 file:
 
 ```console
 $ pico8-to-lua input.p8 --lua-only
