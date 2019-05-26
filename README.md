@@ -39,7 +39,7 @@ end
 You can generate a standard Lua version with the command (depending on your system, you may need to add `lua ` in front of this command):
 
 ```console
-./pico8-to-lua input.lua
+./pico8-to-lua.lua input.lua
 ```
 
 You should see this output:
@@ -64,7 +64,7 @@ end
 ```
 
 ```console
-./pico8-to-lua input.p8
+./pico8-to-lua.lua input.p8
 ```
 
 ...which will output transformed p8 file contents:
@@ -82,7 +82,7 @@ end
 If you only want the lua output, you can pass the `--lua-only` flag when input a p8 file:
 
 ```console
-./pico8-to-lua input.p8 --lua-only
+./pico8-to-lua.lua input.p8 --lua-only
 ```
 
 ```lua
@@ -95,25 +95,25 @@ end
 If you're in a UNIX environment, you can pipe the output directly to a file:
 
 ```console
-./pico8-to-lua input.lua > output.lua
+./pico8-to-lua.lua input.lua > output.lua
 ```
 
 ```
-./pico8-to-lua input.p8 > output.p8
+./pico8-to-lua.lua input.p8 > output.p8
 ```
 
 Or you can pipe into another program:
 
 ```console
-./pico8-to-lua input.p8 --lua-only | luacheck -
+./pico8-to-lua.lua input.p8 --lua-only | luacheck -
 ```
 
 You can even pipe output from another program into this one by passing `-` as the filename argument:
 
 ```console
-cat input.lua | ./pico8-to-lua - > output.lua
+cat input.lua | ./pico8-to-lua.lua - > output.lua
 ```
 
 ```console
-curl https://someurl.com/mycart.p8 | ./pico8-to-lua - --lua-only | luacheck -
+curl https://someurl.com/mycart.p8 | ./pico8-to-lua.lua - --lua-only | luacheck -
 ```
