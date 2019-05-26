@@ -1,0 +1,3 @@
+#!/bin/sh
+
+LUAROCKS_SYSCONFDIR='/usr/local/etc/luarocks' LUA_INIT='package.path="/usr/local/share/lua/5.3/?.lua;/usr/local/share/lua/5.3/?/init.lua;/usr/local/lib/lua/5.3/?.lua;/usr/local/lib/lua/5.3/?/init.lua;/usr/share/lua/5.3/?.lua;/usr/share/lua/5.3/?/init.lua;./?.lua;./?/init.lua;/home/ben/.luarocks/share/lua/5.3/?.lua;/home/ben/.luarocks/share/lua/5.3/?/init.lua";package.cpath="/usr/local/lib/lua/5.3/?.so;/usr/lib/x86_64-linux-gnu/lua/5.3/?.so;/usr/lib/lua/5.3/?.so;/usr/local/lib/lua/5.3/loadall.so;./?.so;/home/ben/.luarocks/lib/lua/5.3/?.so"' exec '/usr/bin/lua5.3' '/usr/local/lib/luarocks/rocks-5.3/luarocks/3.0.4-1/bin/luarocks' --project-tree /home/ben/Documents/Code/pico8-to-lua/lua_modules "$@"
